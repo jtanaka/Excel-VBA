@@ -1,9 +1,5 @@
-Attribute VB_Name = "BorderUtil"
-Sub ŒrüŠO˜g‚Ì‚İ()
-Attribute ŒrüŠO˜g‚Ì‚İ.VB_ProcData.VB_Invoke_Func = "k\n14"
-'
-' ŒrüŠO˜g‚Ì‚İ Macro
-'
+Sub ç½«ç·šå¤–æ ã®ã¿()
+
     Selection.Borders(xlDiagonalDown).LineStyle = xlNone
     Selection.Borders(xlDiagonalUp).LineStyle = xlNone
     Selection.Borders(xlEdgeLeft).LineStyle = xlContinuous
@@ -15,10 +11,19 @@ Attribute ŒrüŠO˜g‚Ì‚İ.VB_ProcData.VB_Invoke_Func = "k\n14"
     
 End Sub
 
-Sub Œrü“à‰¡üíœ()
-Attribute Œrü“à‰¡üíœ.VB_ProcData.VB_Invoke_Func = "l\n14"
-'
-' Œrü“à‰¡üíœ Macro
-'
+Sub ç½«ç·šå†…æ¨ªç·šå‰Šé™¤()
+
     Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    
 End Sub
+
+Sub ç½«ç·šå†…æ¨ªç·šç‚¹ç·š()
+
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlDot
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    
+End Sub
+
