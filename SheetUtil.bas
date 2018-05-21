@@ -8,6 +8,11 @@ Application.ScreenUpdating = False
     For Each s In ActiveWorkbook.Sheets
         s.Activate
         s.Cells(1, 1).Select
+           
+        With ActiveWindow
+            .ScrollRow = ActiveCell.row
+            .ScrollColumn = ActiveCell.Column
+        End With
     Next
     ActiveWorkbook.Sheets(1).Activate
 
